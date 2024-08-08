@@ -85,3 +85,8 @@ class Board:
                 markers_count += 1
                 
         markers_count == 3
+        
+    def reset_board(self):
+        self.game_board = [[Board.EMPTY_CELL, Board.EMPTY_CELL, Board.EMPTY_CELL], 
+                           [Board.EMPTY_CELL, Board.EMPTY_CELL, Board.EMPTY_CELL], 
+                           [Board.EMPTY_CELL, Board.EMPTY_CELL, Board.EMPTY_CELL]]
