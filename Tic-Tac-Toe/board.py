@@ -86,6 +86,17 @@ class Board:
                 
         markers_count == 3
         
+    def check_is_tie(self):
+        """
+        Check if the board is full, but no player won the game
+        """
+        empty_counter = 0
+        
+        for row in self.game_board:
+            empty_counter += row.count(Board.EMPTY_CELL)
+            
+        return empty_counter == 0
+
     def reset_board(self):
         self.game_board = [[Board.EMPTY_CELL, Board.EMPTY_CELL, Board.EMPTY_CELL], 
                            [Board.EMPTY_CELL, Board.EMPTY_CELL, Board.EMPTY_CELL], 
