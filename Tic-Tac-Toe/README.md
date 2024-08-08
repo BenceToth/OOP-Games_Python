@@ -10,7 +10,7 @@ This repository contains an implementation of the classic Tic-Tac-Toe game using
 ## Installation
 1. Clone the repository:
 
-   ```git clone https://github.com/yourusername/tic-tac-toe.git```
+   ```git clone https://github.com/BenceToth/OOP-Games_Python.git```
 
 4. Navigate to the project directory:
 
