@@ -53,3 +53,8 @@ class TicTacToeGame:
         print("  New Round  ")
         print("*************")
         board.reset_board()
+
+
+# Start Game  
+game = TicTacToeGame()
+game.start()
