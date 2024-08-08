@@ -42,6 +42,7 @@ class Player:
 				break  # exit
 			else:
 				print("Please enter an integer between 1 and 9.")
+		return move
 				
 	def get_computer_move(self):
 		random_choice = random.choice(list(range(1, 10)))
