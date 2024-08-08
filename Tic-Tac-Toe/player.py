@@ -33,7 +33,7 @@ class Player:
 		else:
 			return self.get_computer_move()
 		
-	def get_human_move():
+	def get_human_move(self):
 		# loop until user enters a valid input
 		while True:
 			user_input = int(input("Please enter your move (1-9): "))
@@ -43,7 +43,7 @@ class Player:
 			else:
 				print("Please enter an integer between 1 and 9.")
 				
-	def get_computer_move():
+	def get_computer_move(self):
 		random_choice = random.choice(list(range(1, 10)))
 		move = Move(random_choice)
 		print("Computer move (1-9):", move.value)
