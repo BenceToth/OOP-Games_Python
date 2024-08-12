@@ -1,4 +1,4 @@
-class Sprite:
+class Character(object):
     
     def __init__(self, x, y, img_file, speed, life_counter):
         self.x = x
@@ -6,30 +6,29 @@ class Sprite:
         self.img_file = img_file
         self.speed = speed
         self.life_counter = life_counter
- 
- 
-class Enemy(Sprite):
+
+
+class Enemy(Character):
     
     def __init__(self, x, y, img_file, speed):
-        __init__(self, x, y, img_file, speed, 5)
+        Character.__init__(self, x, y, img_file, speed, life_counter=5)
         self.message = "I'm here to protect my master"
- 
- 
-class Player(Enemy):
+
+
+class Player(Character):
     
-    def __init__(self, x, y, img_file, speed):
-        Sprite.(self, y, img_file, speed, 6)
-        self.speed = 56
- 
- 
+    def __init__(self, x, y, img_file, speed=56, life_counter=6):
+        Character.__init__(self, x, y, img_file, speed, life_counter)
+
+
 class DifficultEnemy(Enemy):
     
     def __init__(self, x, y, img_file):
-        Enemy.__init__(self, img_file, 80)
- 
- 
-class EasyEnemy(Player):
+        Enemy.__init__(self, x, y, img_file, speed=80)
+
+
+class EasyEnemy(Enemy):
     
-    Enemy.__init__(self, x, y, img_file, 40)
     def __init__(self, x, y, img_file):
-        self.life_counter = 1
+        Enemy.__init__(self, x, y, img_file, speed=40)
+        self.life_counter = 1  # EasyEnemies have 1 life by default instead of 5
