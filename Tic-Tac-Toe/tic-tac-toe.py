@@ -26,19 +26,19 @@ class TicTacToeGame:
                 if board.check_is_game_over(human, human_move):
                     print("Awesome. You won the game! 🎉")
                     break
-                else:  # computer moves
-                    computer_move = computer.get_move()
-                    board.submit_move(computer, computer_move)
-                    board.print_board()
-                    # if computer won
-                    if board.check_is_game_over(computer, computer_move):
-                        print("Oops...😨 The computer won. Try again.")
-                        break
-                    elif board.check_is_tie():
-                        print("It's a tie! 👍 Try again.")
-                        break
-                    else:
-                        continue
+                
+                # computer moves
+                computer_move = computer.get_move()
+                board.submit_move(computer, computer_move)
+                board.print_board()
+                
+                # if computer won
+                if board.check_is_game_over(computer, computer_move):
+                    print("Oops...😨 The computer won. Try again.")
+                    break
+                elif board.check_is_tie():
+                    print("It's a tie! 👍 Try again.")
+                    break
             
             play_again = input("Would you like to play again? Enter X for YES or O for NO: ").upper()
             
