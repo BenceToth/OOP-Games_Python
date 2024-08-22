@@ -65,4 +65,13 @@ class LinkedList:
             runner = runner.next
         
         return False
-            
+    
+    def delete_node(self, target_value):
+        # empty list
+        if self.head is None:
+            return False
+        # if target is the HEAD node
+        elif self.head.value == target_value:
+            # move HEAD to 2nd node
+            self.head = self.head.next
+            return True
