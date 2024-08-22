@@ -49,6 +49,7 @@ print(my_linked_list.find_node(100))  # False
 print(my_empty_linked_list.find_node(3))  # False
 
 # test delete_node() method
+## beginning of chain
 my_linked_list.print_nodes()  # 0 3 6 9 15
 print(my_linked_list.delete_node(0))  # True
 my_linked_list.print_nodes()  # 3 6 9 15
@@ -56,3 +57,9 @@ my_linked_list.print_nodes()  # 3 6 9 15
 my_empty_linked_list.print_nodes()  # Empty
 print(my_empty_linked_list.delete_node(0))  # False
 my_empty_linked_list.print_nodes()  # Empty
+
+## middle of chain
+my_linked_list.print_nodes()  # 3 6 9 15
+print(my_linked_list.delete_node(9))  # True
+my_linked_list.print_nodes()  # 3 6 15
+print(my_linked_list.delete_node(100))  # False

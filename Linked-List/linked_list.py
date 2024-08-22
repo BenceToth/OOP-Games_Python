@@ -75,3 +75,21 @@ class LinkedList:
             # move HEAD to 2nd node
             self.head = self.head.next
             return True
+        else:
+            previous = self.head
+            runner = self.head.next
+            
+            # move through nodes
+            while (runner is not None) \
+              and (target_value > runner.value):
+                previous = runner
+                runner = runner.next
+                
+            # target is found
+            if (runner is not None) \
+           and (runner.value == target_value):
+               # update pointers
+               previous.next = runner.next  # Bridge
+               return True
+            else:
+                return False
