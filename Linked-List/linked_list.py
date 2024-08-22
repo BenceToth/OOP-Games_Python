@@ -17,3 +17,17 @@ class LinkedList:
             # change pointer
             new_node.next = self.head
             self.head = new_node
+        else:
+            previous = self.head
+            runner = self.head.next
+            
+            # Insertion spot not found, Tail not reached
+            while (runner is not None) \
+              and (value > runner.value):
+                    # moving right
+                    previous = runner
+                    runner = runner.next
+            
+            # update pointers
+            new_node.next = runner
+            previous.next = new_node
