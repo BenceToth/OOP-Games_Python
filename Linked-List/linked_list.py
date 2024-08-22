@@ -45,13 +45,13 @@ class LinkedList:
                 runner = runner.next
             print()
           
-    # Counting nodes: iterative implementation  
+    # Counting nodes: recursive implementation
     def count_nodes(self):
-        count = 0
-        runner = self.head
+          return self.count_nodes_recursive(self.head)
+          
+    def count_nodes_recursive(self, node):
+        if node is None:
+            return 0
+        else:
+            return 1 + self.count_nodes_recursive(node.next)
         
-        while runner is not None:
-            count += 1
-            runner = runner.next
-            
-        return count
