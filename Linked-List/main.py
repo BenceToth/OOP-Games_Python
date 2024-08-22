@@ -32,6 +32,8 @@ print(string_linked_list.head.next.value, end=" ")
 print(string_linked_list.head.next.next.value, end=" ")
 print(string_linked_list.head.next.next.next.value)
 
+my_empty_linked_list = LinkedList()
+
 # test print_nodes() method
 my_linked_list.print_nodes()  # 3, 6, 9, 15
 
@@ -39,3 +41,9 @@ my_linked_list.print_nodes()  # 3, 6, 9, 15
 print(my_linked_list.count_nodes())  # 4
 my_linked_list.insert_node(0)
 print(my_linked_list.count_nodes())  # 5
+print(my_empty_linked_list.count_nodes())  # 0
+
+# test find_node() method
+print(my_linked_list.find_node(3))  # True
+print(my_linked_list.find_node(100))  # False
+print(my_empty_linked_list.find_node(3))  # False
