@@ -63,3 +63,8 @@ my_linked_list.print_nodes()  # 3 6 9 15
 print(my_linked_list.delete_node(9))  # True
 my_linked_list.print_nodes()  # 3 6 15
 print(my_linked_list.delete_node(100))  # False
+
+
+# test print_reversed() method
+my_linked_list.print_nodes()  # 3 6 9 15
+my_linked_list.print_reversed()  # 15, 6, 3

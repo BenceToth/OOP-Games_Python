@@ -44,6 +44,16 @@ class LinkedList:
                 # jump to next node
                 runner = runner.next
             print()
+            
+    # print in reverse: wrapper method
+    def print_reversed(self):
+        self.print_reversed_recursive(self.head)
+    
+    # print in reverse: recursive method
+    def print_reversed_recursive(self, node):
+        if node is not None:
+            self.print_reversed_recursive(node.next)
+            print(node.value, end=" ")
           
     # Counting nodes: recursive implementation
     def count_nodes(self):
