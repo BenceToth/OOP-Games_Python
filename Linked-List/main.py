@@ -34,3 +34,8 @@ print(string_linked_list.head.next.next.next.value)
 
 # test print_nodes() method
 my_linked_list.print_nodes()  # 3, 6, 9, 15
+
+# test count_nodes() method
+print(my_linked_list.count_nodes())  # 4
+my_linked_list.insert_node(0)
+print(my_linked_list.count_nodes())  # 5

@@ -44,3 +44,14 @@ class LinkedList:
                 # jump to next node
                 runner = runner.next
             print()
+          
+    # Counting nodes: iterative implementation  
+    def count_nodes(self):
+        count = 0
+        runner = self.head
+        
+        while runner is not None:
+            count += 1
+            runner = runner.next
+            
+        return count
