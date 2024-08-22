@@ -5,7 +5,7 @@ This repository contains an implementation of the classic Tic-Tac-Toe game using
 * `board.py`: Contains the `Board` class, which manages the game board, prints the board, submits moves, and checks for game over conditions.
 * `move.py`: Contains the `Move` class, which handles the coordinates of each move while validating the input.
 * `player.py`: Contains the `Player` class, which can be either a human or computer player. It serves and an interface to input moves from the human player and generates a random move for the computer player. 
-* tic-tac-toe.py: Contains the TicTacToeGame class, which orchestrates the game flow and start the game.
+* `tic-tac-toe.py`: Contains the `TicTacToeGame` class, which orchestrates the game flow and start the game.
 
 ## Installation
 1. Clone the repository:
@@ -22,11 +22,12 @@ Run the tic-tac-toe.py script to start the game:
 ```python tic-tac-toe.py```
 
 
-## Classes and Methods
+## Classes
 ### Board Class (board.py)
 **Attributes**:
 * EMPTY_CELL: Constant representing an empty cell on the board.
 * game_board: 3x3 matrix representing the Tic-Tac-Toe board.
+
 **Methods**:
 * \__init__(): Initializes the game board with empty cells.
 * print_board(): Prints the current state of the board.
