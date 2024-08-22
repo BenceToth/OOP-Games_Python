@@ -30,4 +30,7 @@ string_linked_list.insert_node("Code")
 print(string_linked_list.head.value, end=" ")
 print(string_linked_list.head.next.value, end=" ")
 print(string_linked_list.head.next.next.value, end=" ")
-print(string_linked_list.head.next.next.next.value, end=" ")
+print(string_linked_list.head.next.next.next.value)
+
+# test print_nodes() method
+my_linked_list.print_nodes()  # 3, 6, 9, 15

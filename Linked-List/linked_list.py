@@ -31,3 +31,16 @@ class LinkedList:
             # update pointers
             new_node.next = runner
             previous.next = new_node
+            
+    def print_nodes(self):
+        # if list is empty
+        if self.head is None:
+            print("Empty")
+        else:
+            runner = self.head
+            # until Trail is reached (included)
+            while runner is not None:
+                print(runner.value, end=" ")
+                # jump to next node
+                runner = runner.next
+            print()
