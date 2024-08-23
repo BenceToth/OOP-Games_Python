@@ -1,5 +1,5 @@
 # Tic-Tac-Toe Game in Python
-This repository contains an implementation of the classic Tic-Tac-Toe game using Python. This project is designed to practice object-oriented programming (OOP) concepts.
+This folder contains an implementation of the classic Tic-Tac-Toe game using Python. This project is designed to practice object-oriented programming (OOP) concepts.
 
 ## Files
 * `board.py`: Contains the `Board` class, which manages the game board, prints the board, submits moves, and checks for game over conditions.
