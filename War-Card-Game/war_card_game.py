@@ -89,3 +89,32 @@ class WarCardGame:
         
         # start a new battle, carrying the accumulated cards
         self.start_battle(player_cards + computer_cards + cards_from_battle)
+        
+    def check_game_over(self):
+        if self._player.has_empty_deck():
+            print("==================")
+            print("|    Game Over   |")
+            print("==================")
+            print("Try again. The computer won.")
+            
+            return True
+        elif self._computer.has_empty_deck():
+            print("======================")
+            print("|      Game Over     |")
+            print("======================")
+            print(f"Excellent. You won, {self._player.name}! Congratulations!")
+            
+            return True
+        else:
+            return False
+        
+    def print_stats(self):
+        print("\n----")
+        print(f"You have {self._player.deck.size} cards on your deck")
+        print(f"The computer has {self._computer.deck.size} cards on its deck")
+        print("\----")
+        
+    def print_welcome_message(self):
+            print("=======================")
+            print("|    War Card Game    |")
+            print("=======================")

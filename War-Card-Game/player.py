@@ -9,6 +9,10 @@ class Player:
     def is_computer(self):
         return self._is_computer
     
+    @property
+    def deck(self):
+        return self._deck
+    
     # check if player's own deck is empty
     def has_empty_deck(self):
         # use size property from the Deck class
