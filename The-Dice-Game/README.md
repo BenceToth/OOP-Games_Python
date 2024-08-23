@@ -1,5 +1,5 @@
 # Dice Game in Python
-This repository contains an implementation of a simple dice game developed to practice object-oriented programming (OOP) in Python. The game involves a player competing against a computer by rolling dice, with the goal to reach a counter value of zero first.
+This folder contains an implementation of a simple dice game developed to practice object-oriented programming (OOP) in Python. The game involves a player competing against a computer by rolling dice, with the goal to reach a counter value of zero first.
 
 ## Installation
 1. Clone the repository:
