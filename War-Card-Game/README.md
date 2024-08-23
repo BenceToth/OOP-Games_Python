@@ -16,9 +16,9 @@ The main objective of this project is to simulate the War card game, allowing th
 ## How to Play
 
 1. Run `main.py` to start the game.
-```
-python main.py
-```
+   ```
+   python main.py
+   ```
 2. Enter your name when prompted.
 3. The game will automatically deal cards and start the first round.
 4. After each round, you'll see the outcome and be asked if you're ready for the next round.
