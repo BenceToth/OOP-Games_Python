@@ -1,26 +1,28 @@
 # War Card Game in Python
-This project implements a console-based version of the classic ("War" card game)[https://en.wikipedia.org/wiki/War_(card_game)]. The game is played between a player and the computer, where each player draws a card, and the player with the higher card value wins the round. In case of a tie, a "war" is initiated, where additional cards are drawn to determine the winner.
+This project implements a console-based version of the classic ["War" card game](https://en.wikipedia.org/wiki/War_(card_game)). The game is played between a player and the computer, where each player draws a card, and the player with the higher card value wins the round. In case of a tie, a "war" is initiated, where additional cards are drawn to determine the winner.
 
 The main objective of this project is to simulate the War card game, allowing the player to compete against the computer. The game continues until one of the players runs out of cards.
 
 ## Installation
 1. Clone the repository:
-
-   ```git clone https://github.com/BenceToth/OOP-Games_Python.git```
-
-4. Navigate to the project directory:
-
-   ```cd War-Card-Game```
+   ```
+   git clone https://github.com/BenceToth/OOP-Games_Python.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd War-Card-Game
+   ```
 
 ## How to Play
 
 1. Run `main.py` to start the game.
+```
+python main.py
+```
 2. Enter your name when prompted.
 3. The game will automatically deal cards and start the first round.
 4. After each round, you'll see the outcome and be asked if you're ready for the next round.
 5. The game ends when one player runs out of cards or you decide to quit.
-
-```python main.py```
 
 ## Requirements
 
@@ -40,7 +42,7 @@ This module contains the `WarCardGame` class, which manages the core game logic.
   - `_deck`: An instance of the `Deck` class representing the main deck of cards.
   
 - **Methods:**
-  - `\__init__(player, computer, deck)`: Initializes the game with player, computer, and deck.
+  - `__init__(player, computer, deck)`: Initializes the game with player, computer, and deck.
   - `make_initial_decks()`: Shuffles the main deck and distributes cards to the player and computer.
   - `make_deck(character)`: Deals 26 cards to the specified character (player or computer).
   - `start_battle(cards_from_war=None)`: Handles a single round of battle between the player and the computer.
@@ -87,7 +89,7 @@ This module contains the `Deck` class, which represents a deck of playing cards.
   - `_cards`: A list of `Card` instances representing the deck.
   
 - **Methods:**
-  - `\__init__(is_empty=False)`: Initializes the deck. If `is_empty` is `False`, it generates a full deck of 52 cards.
+  - `__init__(is_empty=False)`: Initializes the deck. If `is_empty` is `False`, it generates a full deck of 52 cards.
   - `shuffle()`: Shuffles the deck.
   - `draw()`: Draws a card from the top of the deck.
   - `add_card(card)`: Adds a card to the bottom of the deck.
