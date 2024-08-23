@@ -1,5 +1,5 @@
 # Linked List Implementation in Python
-This repository contains an implementation of a singly-linked list in Python. The main objective of this code is to provide a basic understanding of how linked lists work as a Data Structure, including common operations like insertion, deletion, and traversal.
+This folder contains an implementation of a singly-linked list in Python. The main objective of this code is to provide a basic understanding of how linked lists work as a Data Structure, including common operations like insertion, deletion, and traversal.
 
 ## Project Structure
 The project consists of three main Python files:
