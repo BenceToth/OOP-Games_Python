@@ -72,3 +72,20 @@ class WarCardGame:
     def add_cards_to_character(self,  character, list_of_cards):
         for card in list_of_cards:
             character.add_card(card)
+            
+    def start_war(self, cards_from_battle):
+        # draw 3 cards for both characters
+        player_cards = []
+        computer_cards = []
+        
+        for i in range(3):
+            player_card = self._player.draw_card()
+            computer_card = self._computer.draw_card()
+            
+            player_cards.append(player_card)
+            computer_cards.append(computer_card)
+            
+        print("Six hidden cards: XXX XXX")
+        
+        # start a new battle, carrying the accumulated cards
+        self.start_battle(player_cards + computer_cards + cards_from_battle)
