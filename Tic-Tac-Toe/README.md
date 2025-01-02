@@ -29,7 +29,7 @@ Run the tic-tac-toe.py script to start the game:
 * game_board: 3x3 matrix representing the Tic-Tac-Toe board.
 
 **Methods**:
-* \__init__(): Initializes the game board with empty cells.
+* \_\_init_\_(): Initializes the game board with empty cells.
 * print_board(): Prints the current state of the board.
 * print_board_with_positions(): Prints the board positions for reference.
 * submit_move(player, move): Submits a move for a player.
@@ -46,7 +46,7 @@ Run the tic-tac-toe.py script to start the game:
 * position: Position of the move (1-9).
 
 **Methods**:
-* \__init__(position): Initializes the move with a position.
+* \_\_init_\_(position): Initializes the move with a position.
 * get_row(): Returns the row index of the move.
 * get_column(): Returns the column index of the move.
 
@@ -54,8 +54,9 @@ Run the tic-tac-toe.py script to start the game:
 **Attributes**:
 * is_human: Boolean indicating if the player is human.
 * marker: Player's marker ('X' or 'O' by default).
+
 **Methods**:
-* \__init__(is_human=True): Initializes the player.
+* \_\_init_\_(is_human=True): Initializes the player.
 * get_move(): Gets the player's move (either from user input or computer logic).
 
 ### TicTacToeGame Class (tic-tac-toe.py)
