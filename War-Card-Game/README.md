@@ -1,6 +1,8 @@
 # War Card Game in Python
 This project implements a console-based version of the classic ["War" card game](https://en.wikipedia.org/wiki/War_(card_game)). The game is played between a player and the computer, where each player draws a card, and the player with the higher card value wins the round. In case of a tie, a "war" is initiated, where additional cards are drawn to determine the winner.
 
+[![Play it in a HuggingFace Space Right Now](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/BenToT360/War-Card-Game/)
+
 The main objective of this project is to simulate the War card game, allowing the player to compete against the computer. The game continues until one of the players runs out of cards.
 
 ## Installation
