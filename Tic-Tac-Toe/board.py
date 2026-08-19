@@ -84,7 +84,7 @@ class Board:
             if self.game_board[i][2-i] == player.marker:
                 markers_count += 1
                 
-        markers_count == 3
+        return markers_count == 3
         
     def check_is_tie(self):
         """
