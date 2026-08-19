@@ -1,7 +1,7 @@
 # Tic-Tac-Toe Game in Python
 This folder contains an implementation of the classic Tic-Tac-Toe game using Python. This project is designed to practice object-oriented programming (OOP) concepts.
 
-[![Play it in a HuggingFace Space Right Now](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/BenToT360/PyTic-Tac-Toe)
+_**Play it in a HuggingFace Space Right Now!:**_ [![Play it in a HuggingFace Space Right Now](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/BenToT360/PyTic-Tac-Toe)
 
 ## Files
 * `board.py`: Contains the `Board` class, which manages the game board, prints the board, submits moves, and checks for game over conditions.
