@@ -1,6 +1,8 @@
 # Dice Game in Python
 This folder contains an implementation of a simple dice game developed to practice object-oriented programming (OOP) in Python. The game involves a player competing against a computer by rolling dice, with the goal to reach a counter value of zero first.
 
+_**Play it in a HuggingFace Space Right Now!:**_ [![Play it in a HuggingFace Space Right Now](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/BenToT360/The-Dice-Game)
+
 ## Installation
 1. Clone the repository:
 
